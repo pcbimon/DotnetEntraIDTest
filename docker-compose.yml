@@ -1,0 +1,11 @@
+# Local Entra ID emulator (https://github.com/cmaneu/entra-local). Dev only: seeded secrets, open admin API.
+services:
+  entra-local:
+    image: ghcr.io/cmaneu/entra-local:0.1.1@sha256:70584ef110914d100409cb3d63a63548ccdde10ca780f9751755f1482dec5d7e
+    ports:
+      - "127.0.0.1:8443:8443" # localhost only, never expose
+    volumes:
+      - entra-local-data:/app/data
+
+volumes:
+  entra-local-data:

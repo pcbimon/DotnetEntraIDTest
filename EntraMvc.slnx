@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/EntraMvc/EntraMvc.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/EntraMvc.Tests/EntraMvc.Tests.csproj" />
+  </Folder>
+</Solution>
